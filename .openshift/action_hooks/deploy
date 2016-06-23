@@ -10,7 +10,7 @@ readonly JAVA_HOME=jdk8
 if [ ! -d ${OPENSHIFT_DATA_DIR}m2/repository ]
 then
 	cd $OPENSHIFT_DATA_DIR
-	mkdir m2/repository                
+	mkdir m2/repository
 fi
 
 #if [ ! -d ${OPENSHIFT_DATA_DIR}logs ]
