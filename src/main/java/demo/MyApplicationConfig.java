@@ -27,7 +27,12 @@ public class MyApplicationConfig {
 			@Override
 			public void beforeApplicationStart(CamelContext context) {
 				// Custom configuration goes here
-				LOG.info(" *** TRIFON - Configuring Camel metrics on all routes");
+				LOG.info(" *** TRIFON - before Camel Application Start!"); // Old: Configuring Camel metrics on all routes
+			}
+
+			@Override
+			public void afterApplicationStart(CamelContext camelContext) {
+				LOG.info(" *** TRIFON - after Camel Application Start!");
 			}
 		};
 	}
