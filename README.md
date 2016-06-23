@@ -9,9 +9,9 @@ Setup connection to OpenShift Broker
 
 To create an application using client tools, type the following command:
 
-    rhc app create camel diy-0.1
+	rhc app create camel diy-0.1
 
-		
+
 This command creates an application *camel* using *DIY* cartridge and clones the repository to *camel* directory.
 
 # Step 2: Add PostgreSQL cartridge to application
@@ -22,17 +22,24 @@ The application we are creating will use PostgreSQL database, hence we need to a
 
 After creating the cartridge, it is possible to check its status with the following command:
 
-    rhc cartridge status postgresql-9.2 --app camel
+	rhc cartridge status postgresql-9.2 --app camel
 
 # Step 3: Delete Template Application Source code
 
 OpenShift creates a template project that can be freely removed:
 
-    git rm -rf .openshift README.md diy misc
+	cd camel
+	git rm -rf .openshift README.md diy misc
+
+
+Configure GIT:
+
+	git config --global user.email "you@example.com"
+	git config --global user.name "Your Name"
 
 Commit the changes:
 
-    git commit -am "Removed template application source code"
+	git commit -am "Removed template application source code"
 
 # Step 4: Pull Source code from GitHub
 
