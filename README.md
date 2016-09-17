@@ -91,4 +91,4 @@ And when you observe the build result, the application starts a bit faster on Je
 
 # Under the hood
 
-http://camel.apache.org/spring-boot.html
+[Spring Boot](http://camel.apache.org/spring-boot.html)
