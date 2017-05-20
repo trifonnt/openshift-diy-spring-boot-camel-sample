@@ -83,7 +83,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>demo.MyApplication</mainClass>
+					<mainClass>${start-class}</mainClass>
 				</configuration>
 				<executions>
 					<execution>
